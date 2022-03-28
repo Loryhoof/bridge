@@ -30,7 +30,7 @@ export default () => {
     let physicsIds = [];
     let glassArray = [];
     (async () => {
-        const u = `${baseUrl}stange.glb`;
+        const u = `${baseUrl}/assets/stange.glb`;
         let gltf = await new Promise((accept, reject) => {
             const {gltfLoader} = useLoaders();
             gltfLoader.load(u, accept, function onprogress() {}, reject);
@@ -40,7 +40,7 @@ export default () => {
         app.updateMatrixWorld();
     })();
     (async () => {
-        const u = `${baseUrl}rest.glb`;
+        const u = `${baseUrl}/assets/rest.glb`;
         let gltf = await new Promise((accept, reject) => {
             const {gltfLoader} = useLoaders();
             gltfLoader.load(u, accept, function onprogress() {}, reject);
